@@ -12,7 +12,7 @@ import { BsKeyboard } from 'react-icons/bs'
 import classNames from 'classnames/bind';
 import styles from './Header.module.scss'
 import images from '~/assets/images'
-
+import { Link } from 'react-router-dom';
 import Image from '~/components/Image';
 import Button from '~/components/Button';
 import Menu from '~/components/Popper/Menu';
@@ -105,7 +105,7 @@ function Header() {
         <header className={cx('wrapper')}>
             <div className={cx('inner')}>
                 <div className={cx('logo')}>
-                    <img src={images.logo} alt='logo'></img>
+                    <Link className={cx('logo-link')} to="/">    <img src={images.logo} alt='logo'></img></Link>
                 </div>
                 <Search />
                 <div className={cx('action')}>
