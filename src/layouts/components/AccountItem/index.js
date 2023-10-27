@@ -3,6 +3,7 @@ import styles from './AccounItem.module.scss'
 import { AiFillCheckCircle } from "react-icons/ai";
 import { Link } from "react-router-dom";
 import Image  from "~/components/Image";
+import PropTypes from 'prop-types'
 const cx = classNames.bind(styles)
 function AccountItem({ data }) {
     return (
@@ -18,5 +19,7 @@ function AccountItem({ data }) {
         </Link>
     );
 }
-
+AccountItem.propTypes ={
+    data: PropTypes.object
+}
 export default AccountItem;

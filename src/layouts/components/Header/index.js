@@ -116,7 +116,7 @@ function Header() {
                                     <UploadIcon />
                                 </button >
                             </Tippy>
-                            <button style={{ padding: '0 12px' }} className={cx('action-btn')}>
+                            <button style={{ padding: '0 12px' }} className={cx('action-btn' ,'custom-mess')}>
                                 < MessageIcon />
                             </button >
                             <button className={cx('action-btn')}>
