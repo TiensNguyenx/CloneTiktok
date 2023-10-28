@@ -5,7 +5,6 @@
 
 .search {
     position: relative;
-
     height: 46px;
     background-color: rgba(22, 24, 35, 0.06);
     border-radius: 92px;
@@ -16,6 +15,8 @@
     border: 1.5px solid transparent;
     caret-color: var(--primary);
     input {
+        padding-right: 40px;
+
         flex: 1;
         height: 100%;
         color: var(--black);
@@ -57,7 +58,7 @@
     color: rgba(22, 24, 36, 0.34);
 }
 .loading {
-    animation: spiner .8s linear infinite;
+    animation: spiner 0.8s linear infinite;
 }
 @keyframes spiner {
     from {

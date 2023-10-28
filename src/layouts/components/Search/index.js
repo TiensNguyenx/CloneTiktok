@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import HeadlessTippy from '@tippyjs/react/headless';
 import classNames from 'classnames/bind';
 import { Wrapper as PopperWrapper } from '~/components/Popper';
-import AccountItem from '../AccountItem';
+import AccountItem from '~/components/AccountItem';
 import { SearchIcon } from '~/components/Icons';
 import styles from './Search.module.scss';
 
@@ -54,9 +54,9 @@ function Search() {
         }
     }
     return (
-       <div>
+        <div>
             <HeadlessTippy
-      
+
                 interactive
                 visible={showResult && searchResult.length > 0}
                 render={(attrs) => (
@@ -86,13 +86,13 @@ function Search() {
                         </button>
                     )}
                     {loading && <FontAwesomeIcon className={cx('loading')} icon={faSpinner} />}
-    
+
                     <button className={cx('search-btn')} onMouseDown={(e) => e.preventDefault()}>
                         <SearchIcon />
                     </button>
                 </div>
             </HeadlessTippy>
-       </div>
+        </div>
     );
 }
 
